@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Whistle Pig Wood Shop</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+
+		<header class="main-header">
+			<a class="site-logo" href="/">
+				<img src="images/whistlepig.svg" alt="Whistle Pig Wood Shop Logo">
+			</a>
+
+			<ul class="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+
+		<div class="more-info">
+			<div class="location">
+				<h2>Find Me Here</h2>
+				<p>I'll be at the Local Market today!</p>
+				<div id="map"></div>
+		        <!-- <img src="images/" alt=""> -->
+			</div>
+			<div class="testimonies">
+				<h2>Testimonies</h2>
+				<blockquote>"Worked with Tom to make some custom coasters. He honored my ideas and really ran with them to make an incredibly sturdy product. Great gifts!" - Jonathan Roberts</blockquote>
+				<blockquote>"His custom work is amazing, Tom is great to work with!" - Eric Thornhill</blockquote>
+				<blockquote>"... I'm excited to get gifts for my other loved ones (and myself) in the future." - Leah Catherine</blockquote>
+			</div>
+		</div>
+
+		<div class="contact">
+			<h2>Contact</h2>
+			<div class="contact-form">
+				<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+				<form action="index.html" method="post">
+
+		    		<fieldset>
+		    			<h2 class="headline">Signup for our newsletter</h2>
+			    		<p class="headline">Get the latest news on how your code is doing right in your inbox</p>
+		    		</fieldset>
+
+		    		<hr class="top">
+		    		<hr class="bottom">
+
+		    		<fieldset class="topField">
+		    			<legend class="input">Want me to make you something?</legend>
+		    			<div>
+			    			<label for="name">Full Name</label>
+			    			<input type="text" id="name" name="user_name" placeholder="Required ">
+			    		</div>
+			    		<div>
+			    			<label for="mail">Email Address</label>
+			    			<input type="email" id="mail" name="user_email" placeholder="Required ">
+			    		</div>
+		  				<div>
+		  					<textarea id="message" name="message"></textarea>
+		  				</div>
+		    		</fieldset>
+
+		    		<button type="submit">Sign Up</button>
+
+		    	</form>
+
+			</div>
+			<div class="social-media">
+				<p>Check out more of my work on these social platforms:</p>
+				<a class="social-img" href="https://www.facebook.com/whistlepigwoodshopdotcom/">
+					<img src="images/facebook.svg" alt="Facebook">
+				</a>
+				<a class="social-img" href="https://www.instagram.com/whistlepigwoodshop/">
+					<img src="images/instagram.svg" alt="Instagram">
+				</a>
+			</div>
+		</div>
+		<footer class="bottom-footer">
+			<hr>
+			<div class="bottom-nav">
+				<h4 class="item">Whistle Pig Wood Shop</h4>
+				<ul class="bottom-links">
+					<li class="item"><a href="index.html">Home</a></li>
+					<li class="item"><a href="#portfolio">About</a></li>
+					<li class="item"><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="return-link item">
+					<a href="#top">Back to top</a>
+				</div>
+			</div>
+		</footer>
+	</div> <!-- container -->
+	<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0g08zpYx0WQt8aCAgdj9Xpj6s8KQv5WM&callback=initMap">
+    </script>
+</body>
+
+</html>

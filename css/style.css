@@ -1,0 +1,106 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  color: #797e83;
+  font-size: 16px;
+  margin: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5; 
+}
+
+h2, 
+p {
+	text-align: center;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+a {
+  color: #656a6e;
+  text-decoration: none;
+  font-weight: 400; 
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+}
+
+/* --------------------------
+  More Info
+--------------------------- */
+.more-info {
+	background-color: #ffdbc0;
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+/* --------------------------
+  Projects
+--------------------------- */
+
+.projects {
+	background-color: #ffac5e;
+}
+
+/* --------------------------
+  Contact
+--------------------------- */
+
+.contact {
+	background-color: #4aa8c0;
+}
+
+.contact h2, .contact p {
+	color: #fff;
+}
+
+.social-img img {
+	width: 80px;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 769px) { 
+	p {
+		text-align: left;
+	}
+
+	.more-info {
+		display: flex;
+	}
+
+	.location,
+	.testimonies {
+		width: 50%;
+		flex-direction: row;
+	}
+
+	.main-content {
+		margin-top: 4em;
+	}
+}
+/*
+@media (min-width: 1200px) {
+	.container {
+		width: 1080px;
+	}
+}*/
