@@ -24,7 +24,7 @@
 
 .nav a {
 	display: block;
-	color: #797e83;
+	color: #000;
 	font-size: 1.125em;
 	font-weight: 300;
 	text-align: center;
@@ -33,7 +33,7 @@
 }
 
 .nav a:hover {
-	color: #0b0b0b;
+	color: #4aa8c0;
 	border-bottom-color: #eebf7b;
 }
 
@@ -44,11 +44,25 @@
 @media (min-width: 769px) {
 
 	.main-header {
-		background-image: url("../images/cover-image.png");
-		background-size: cover;
-		height: 600px;
-		justify-content: flex-end;
+	    position: relative;
+	    z-index: 1;
+	    height: 600px;
+		/*justify-content: flex-end;*/
 	}
+
+	.main-header:before {
+	    content: "";
+	    position: absolute;
+	    z-index: -1;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    background-image: url('../images/cover-image.png');
+	    background-size: cover;
+	    opacity: .3;
+	}
+
 	.site-logo {
 		width: 140px;
 	}
@@ -64,7 +78,8 @@
 
 @media (min-width: 1025px) {
 	.main-header {
-		flex-direction: row;align-items: 
+		margin-bottom: auto;
+		flex-direction: row;
 	}
 
 	.site-logo {
