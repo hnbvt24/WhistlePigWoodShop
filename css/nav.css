@@ -46,11 +46,11 @@
 	.main-header {
 	    position: relative;
 	    z-index: 1;
-	    height: 600px;
+	    height: 200px;
 		/*justify-content: flex-end;*/
 	}
 
-	.main-header:before {
+	/*.main-header:before {
 	    content: "";
 	    position: absolute;
 	    z-index: -1;
@@ -61,7 +61,7 @@
 	    background-image: url('../images/cover-image.png');
 	    background-size: cover;
 	    opacity: .3;
-	}
+	}*/
 
 	.site-logo {
 		width: 140px;
@@ -78,6 +78,7 @@
 
 @media (min-width: 1025px) {
 	.main-header {
+		padding-top: 0;
 		margin-bottom: auto;
 		flex-direction: row;
 	}
