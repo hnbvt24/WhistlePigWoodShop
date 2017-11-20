@@ -4,10 +4,6 @@
 
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
-* {
-  box-sizing: border-box; 
-}
-
 body {
   color: #000;
   font-size: 16px;
@@ -43,6 +39,15 @@ a {
 	margin: auto;
 }
 
+.location,
+.testimonies,
+.contact-form,
+.social-media
+#map {
+	width: 85%;
+	margin: auto;
+}
+
 /* --------------------------
   More Info
 --------------------------- */
@@ -53,29 +58,23 @@ a {
 .contact,
 .contact-form,
 .social-media {
-	/*background-color: #ffdbc0;*/
 	margin-top: 3em;
 }
 
 #map {
-	height: 400px;
-	width: 100%;
+	height: 300px;
 }
 
 /* --------------------------
   Projects
 --------------------------- */
 
-.projects {
-	/*background-color: #ffac5e;*/
-}
 
 /* --------------------------
   Contact
 --------------------------- */
 
 .contact {
-	/*background-color: #4aa8c0;*/
 	margin-bottom: 3em;
 }
 
@@ -103,7 +102,7 @@ footer img {
   Media Queries
 --------------------------- */
 
-@media (min-width: 769px) { 
+@media (min-width: 769px) {
 	p {
 		text-align: left;
 	}
@@ -121,6 +120,7 @@ footer img {
 	.main-content {
 		margin-top: 4em;
 	}
+
 }
 /*
 @media (min-width: 1200px) {

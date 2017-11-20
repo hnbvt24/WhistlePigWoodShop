@@ -1,0 +1,162 @@
+/* --------------------------
+  Main Styles
+--------------------------- */
+
+*, 
+*:before, *:after {
+  	box-sizing: border-box;
+}
+
+form {
+	display: flex;
+  	flex-direction: column;
+  	background-color: #fafbfb;
+  	margin: 0 auto;
+  	margin-top: 20px;
+  	padding: 10px 20px;
+  	width: 100%;
+}
+
+button {
+	color:#fff;
+	text-decoration: none;
+}
+
+fieldset {
+  	border: none;
+  	margin: 0;
+  	padding: 0;
+}
+
+header {
+	background-color: #2d3945;
+}
+
+header {
+	padding: 20px 0;
+}
+
+h1 {
+	font-size: 1.2em;
+	margin: 0 auto;
+}
+
+legend {
+	font-size: 1.2em;
+  	font-weight: bold;
+  	margin-bottom: 20px;
+  	text-align: center;
+}
+
+fieldset.topField {
+  margin-top: 2em;
+}
+
+/* ---------------
+    Input fields
+  ---------------- */
+
+div > textarea {
+  	margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  	background: rgba(255,255,255,0.1);
+  	border: none;
+  	border-radius: 5px;
+  	font-size: 16px;
+  	height: 52px;
+  	margin: 0;
+  	outline: 0;
+  	padding: 18px;
+  	width: 100%;
+  	background-color: #e8eeef;
+  	color: #747777;
+  	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  	margin-top: 10px;
+  	-webkit-transition: all .4s ease-out;
+  	-moz-transition: all .4s ease-out;
+  	-ms-transition: all .4s ease-out;
+  	-o-transition: all .4s ease-out;
+  	transition: all .4s ease-out;
+}
+
+input::placeholder {
+  	color: #bbbcbc;
+}
+
+input[placeholder*="Required"] {
+	text-align: right;
+	font-style: italic;
+	font-size: 12px;
+}
+
+input:focus, 
+textarea:focus {
+ 	border: 2px solid #eebf7b;
+  	background-color: #f8f9f9;
+ 	-webkit-transition: all .2s ease-in;
+  	-moz-transition: all .2s ease-in;
+  	-ms-transition: all .2s ease-in;
+  	-o-transition: all .2s ease-in;
+  	transition: all .2s ease-in;
+}
+
+input[placeholder*="Required"]:focus {
+  	text-align: left;
+}
+
+input:not(:placeholder-shown) {
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+}
+
+input[name*="user_zip"] {
+  display: block;
+  width: 150px;
+}
+
+input[type*="checkbox"],
+input[type*="radio"] {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.headline {
+	text-align: center;
+}
+
+p.headline, footer {
+	color: #eebf7b;
+	font-size: .9em;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background: #eebf7b;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #eebf7b;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
