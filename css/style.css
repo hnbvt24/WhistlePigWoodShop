@@ -17,7 +17,11 @@ body {
 }
 
 h2, 
-p {
+blockquote,
+footer,
+p,
+.more-info p, 
+.social-media {
 	text-align: center;
 }
 
@@ -42,8 +46,15 @@ a {
 /* --------------------------
   More Info
 --------------------------- */
-.more-info {
-	background-color: #ffdbc0;
+.more-info,
+.location,
+.testimonies
+.projects,
+.contact,
+.contact-form,
+.social-media {
+	/*background-color: #ffdbc0;*/
+	margin-top: 3em;
 }
 
 #map {
@@ -56,7 +67,7 @@ a {
 --------------------------- */
 
 .projects {
-	background-color: #ffac5e;
+	/*background-color: #ffac5e;*/
 }
 
 /* --------------------------
@@ -64,16 +75,29 @@ a {
 --------------------------- */
 
 .contact {
-	background-color: #4aa8c0;
-}
-
-.contact h2, .contact p {
-	color: #fff;
+	/*background-color: #4aa8c0;*/
+	margin-bottom: 3em;
 }
 
 .social-img img {
 	width: 80px;
+	padding-left: .65em;
+	padding-right: .65em;
 }
+
+/* --------------------------
+  Footer
+--------------------------- */
+
+footer {
+	text-align: center;
+}
+
+footer img {
+	margin-top: 2em;
+	width: 80px;
+}
+
 
 /* --------------------------
   Media Queries
