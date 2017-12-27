@@ -1,0 +1,19 @@
+
+/* A file for larger, more abstract and reusable elements across the site */
+.section{
+  margin-top:1rem;
+  margin-bottom:1rem;
+  padding:2rem;
+
+  &.section-thin{
+    margin:0;
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+
+  &.section-stacked{
+    >*{
+      margin-top:2rem;
+    }
+  }
+}

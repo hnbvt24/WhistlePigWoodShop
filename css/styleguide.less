@@ -1,0 +1,47 @@
+
+
+.page-styleguide{
+}
+
+.styleguide-colors{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+
+  .styleguide-colorblock{
+    width:8rem;
+    height:8rem;
+    margin:1rem;
+
+    padding:1rem;
+    border-radius:.5rem;
+    box-shadow:@shadow-z1;
+
+    &.color-black{
+      background-color:@color-black;
+      color: @color-white;
+    }
+
+    &.color-secondary{
+      background-color:@color-secondary;
+    }
+
+    &.color-white{
+      background-color:@color-white;
+    }
+
+    &.color-primary{
+      background-color:@color-primary;
+    }
+
+    &.color-primary-light{
+      background-color:@color-primary-light;
+    }
+  }
+
+  .styleguide-colorblock-box{
+    height:100%;
+  }
+
+
+}

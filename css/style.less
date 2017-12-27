@@ -5,14 +5,14 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
 body {
-  color: #000;
+  background-color: @color-white;
+  color: @color-black;
   font-size: 16px;
   margin: 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5; 
 }
 
-h2, 
 blockquote,
 footer,
 p,
@@ -29,7 +29,7 @@ li {
 }
 
 a {
-  color: #656a6e;
+  color: @color-primary;
   text-decoration: none;
   font-weight: 400; 
 }
@@ -58,7 +58,7 @@ a {
 .contact,
 .contact-form,
 .social-media {
-	margin-top: 3em;
+	margin-top: 3rem;
 }
 
 #map {
@@ -75,13 +75,13 @@ a {
 --------------------------- */
 
 .contact {
-	margin-bottom: 3em;
+	margin-bottom: 3rem;
 }
 
 .social-img img {
 	width: 80px;
-	padding-left: .65em;
-	padding-right: .65em;
+	padding-left: .65rem;
+	padding-right: .65rem;
 }
 
 /* --------------------------
@@ -89,11 +89,12 @@ a {
 --------------------------- */
 
 footer {
+  padding:2rem;
 	text-align: center;
 }
 
 footer img {
-	margin-top: 2em;
+	margin-top: 2rem;
 	width: 80px;
 }
 
@@ -118,7 +119,7 @@ footer img {
 	}
 
 	.main-content {
-		margin-top: 4em;
+		margin-top: 4rem;
 	}
 
 }
@@ -128,3 +129,10 @@ footer img {
 		width: 1080px;
 	}
 }*/
+
+
+.page-contact{
+  h2{
+    text-align:center;
+  }
+}
